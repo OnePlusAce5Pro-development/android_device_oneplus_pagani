@@ -51,10 +51,6 @@ $(call soong_config_set,qtipower,mode_ext_lib,power-ext-oplus)
 PRODUCT_PACKAGES += \
     sensors.oplus
 
-# PowerShare
-PRODUCT_PACKAGES += \
-    vendor.lineage.powershare-service.oplus
-
 # Regional properties
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/recovery/root/vendor/odm/etc/24811/build.default.prop:$(TARGET_COPY_OUT_ODM)/etc/24811/build.default.prop \
