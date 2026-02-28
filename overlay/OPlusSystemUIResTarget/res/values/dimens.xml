@@ -5,7 +5,10 @@
 -->
 <resources>
     <!-- the padding on the start of the statusbar -->
-    <dimen name="status_bar_padding_start">14dp</dimen>
+    <dimen name="status_bar_padding_start">24dp</dimen>
+
+    <!-- Margin on the left side of the carrier text on Keyguard -->
+    <dimen name="keyguard_carrier_text_margin">@dimen/status_bar_padding_start</dimen>
 
     <!-- Location on the screen of the center of the physical power button. This is a reasonable
     default that should be overridden by device-specific overlays. -->
@@ -16,7 +19,7 @@
 
     <!-- Microns/ums (1000 um = 1mm) per pixel for the given device. If unspecified, UI that
          relies on this value will not be sized correctly. -->
-    <item name="pixel_pitch" format="float" type="dimen">55.27</item>
+    <item name="pixel_pitch" format="float" type="dimen">49.49</item>
 
     <!-- Bottom margin size when fingerprint in display is active -->
     <dimen name="keyguard_indication_margin_bottom">400px</dimen>
