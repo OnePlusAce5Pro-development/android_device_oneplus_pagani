@@ -1,0 +1,8 @@
+# Device info
+ro.product.odm.device=OP60EBL1
+ro.product.odm.model=PKR110
+ro.product.odm.name=PKR110
+ro.vendor.oplus.regionmark=CN
+
+# NFC
+persist.vendor.nfc.config_file_name=libnfc-mtp-SN220.conf_24811
