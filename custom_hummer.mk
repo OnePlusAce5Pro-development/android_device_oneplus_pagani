@@ -11,10 +11,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from hummer device
 $(call inherit-product, device/oneplus/hummer/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common PixelOS stuff.
+$(call inherit-product, vendor/custom/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_hummer
+PRODUCT_NAME := custom_hummer
 PRODUCT_DEVICE := hummer
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus

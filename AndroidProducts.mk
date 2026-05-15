@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_hummer.mk
+    $(LOCAL_DIR)/custom_hummer.mk
