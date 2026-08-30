@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/custom_hummer.mk
+    $(LOCAL_DIR)/custom_pagani.mk

@@ -53,7 +53,8 @@ PRODUCT_PACKAGES += \
 
 # Regional properties
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/recovery/root/vendor/odm/etc/24811/build.default.prop:$(TARGET_COPY_OUT_ODM)/etc/24811/build.default.prop \
+    $(LOCAL_PATH)/recovery/root/vendor/odm/etc/24821/build.default.prop:$(TARGET_COPY_OUT_ODM)/etc/24821/build.default.prop \
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
@@ -64,10 +65,10 @@ $(call soong_config_set_bool,OPLUS_LINEAGE_TOUCH_HAL,ENABLE_HTPR,false)
 
 # Vibrator
 $(call soong_config_set_bool,OPLUS_LINEAGE_VIBRATOR_HAL,USE_EFFECT_STREAM,true)
-$(call soong_config_set,qti_vibrator,effect_lib,libqtivibratoreffect.oplus.hummer)
+$(call soong_config_set,qti_vibrator,effect_lib,libqtivibratoreffect.oplus.pagani)
 
 # Inherit from the common OEM chipset makefile.
 $(call inherit-product, device/oneplus/sm8750-common/common.mk)
 
 # Inherit from the proprietary files makefile.
-$(call inherit-product, vendor/oneplus/hummer/hummer-vendor.mk)
+$(call inherit-product, vendor/oneplus/pagani/pagani-vendor.mk)

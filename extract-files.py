@@ -29,14 +29,13 @@ blob_fixups: blob_fixups_user_type = {
         .regex_replace(r'(fdSupport += )TRUE;', r'\1FALSE;'),
     'odm/etc/init/init.camera_process.rc': blob_fixup()
         .regex_replace('    delete_recursion', '    #delete_recursion'),
-    'odm/etc/libnfc-mtp-SN220.conf_24811': blob_fixup()
+    'odm/etc/libnfc-mtp-SN220.conf_24821': blob_fixup()
         .regex_replace('(NXPLOG_.*_LOGLEVEL)=0x03', '\\1=0x02')
         .regex_replace('NFC_DEBUG_ENABLED=1', 'NFC_DEBUG_ENABLED=0'),
     'odm/lib64/libAlgoProcess.so': blob_fixup()
         .replace_needed('android.hardware.graphics.common-V5-ndk.so', 'android.hardware.graphics.common-V7-ndk.so'),
     (
         'odm/lib64/libAncHumanSegFigureFusion.so',
-        'odm/lib64/libFaceBeautyJni.so',
         'odm/lib64/libEIS.so',
         'odm/lib64/libHIS.so',
         'odm/lib64/libOPAlgoCamAiBeautyFaceRetouchCn.so',
@@ -70,7 +69,7 @@ blob_fixups: blob_fixups_user_type = {
 }  # fmt: skip
 
 module = ExtractUtilsModule(
-    'hummer',
+    'pagani',
     'oneplus',
     namespace_imports=namespace_imports,
     blob_fixups=blob_fixups,
