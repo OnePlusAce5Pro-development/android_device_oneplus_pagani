@@ -49,6 +49,8 @@ blob_fixups: blob_fixups_user_type = {
         .clear_symbol_version('AHardwareBuffer_lockPlanes')
         .clear_symbol_version('AHardwareBuffer_release')
         .clear_symbol_version('AHardwareBuffer_unlock'),
+    'odm/lib64/liboprec_audrec.so': blob_fixup()
+        .replace_needed('libstdc++.so', 'libstdc++_vendor.so'),
     'odm/lib64/libsensorbridge.so': blob_fixup()
         .replace_needed('android.hardware.sensors-V2-ndk.so', 'android.hardware.sensors-V3-ndk.so'),
     'vendor/etc/libnfc-nci.conf': blob_fixup()
