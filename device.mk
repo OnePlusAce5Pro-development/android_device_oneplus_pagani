@@ -38,6 +38,12 @@ PRODUCT_PACKAGES += \
     OPlusSettingsResTarget \
     OPlusSystemUIResTarget
 
+# NFC
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/nfc/libnfc-mtp-SN220.conf_24821:$(TARGET_COPY_OUT_ODM)/etc/libnfc-mtp-SN220.conf_24821 \
+    $(LOCAL_PATH)/configs/nfc/libnfc-mtp-SN220.conf_24875:$(TARGET_COPY_OUT_ODM)/etc/libnfc-mtp-SN220.conf_24875 \
+    $(LOCAL_PATH)/configs/nfc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf
+
 # Pluskey
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/keylayout/gpio-keys.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/gpio-keys.kl
