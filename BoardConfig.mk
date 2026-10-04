@@ -13,7 +13,7 @@ include device/oneplus/sm8750-common/BoardConfigCommon.mk
 DEVICE_PATH := device/oneplus/pagani
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := OP60F5L1
+TARGET_OTA_ASSERT_DEVICE := OP60F5L1,OP612BL1
 
 # Display
 TARGET_SCREEN_DENSITY := 540

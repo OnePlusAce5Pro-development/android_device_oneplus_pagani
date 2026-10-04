@@ -1,1 +1,1 @@
-require board=sun|OP60F5L1
+require board=sun|OP60F5L1|OP612BL1
